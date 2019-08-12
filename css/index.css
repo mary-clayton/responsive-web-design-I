@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-@media screen and (max-width: 1440px){
+
 
 nav {
     width: 100%;
@@ -92,10 +92,16 @@ nav {
 }
 .banner {
     display:flex;
+    flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    margin-top: 10%;
+    margin-left: -20%;
+    
     
 }
+
+
 .logo {
 	width:200px;
 	height: 45px;
@@ -103,7 +109,7 @@ nav {
 h1 {
     font-size: 60px;
     text-align: center;
-    width: 18%;
+    line-height: 50%;
 
 }
  .subhead {
@@ -112,34 +118,48 @@ h1 {
 	 
  }
  .header-img {
-     padding: 5%;
+    margin-top: -25%;
+    margin-left: 50%;
+    padding: 5%;
  }
 
  .section1 {
 	border-top: 2px solid black;
-	padding: 7% 0 7% 0;
-	margin-left: 20%;
-	display: flex;
-	width: 60%;
+	padding:3%;
+	justify-content: center;
+    display: flex;
+    flex-flow: wrap;
 
   }
   .section2 {
-	display: flex;
-	width:70%;
-	margin-left: 17%;
-	padding: 5%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+	padding: 3%;
   }
   .services {
-	margin-left: 5%;
+    margin-left: 5%;
+    width: 50%;
+  }
+  .features {
+      margin-left:5%;
+      width: 30%;
   }
   .about {
-	margin-left: 5%;
+    margin-left: 5%;
+    width: 30%;
+  }
+  .services {
+    margin-left: 5%;
+    width: 25%;
   }
   .products {
-	margin-left: 5%;
+    margin-left: 5%;
+    width: 25%;
   }
   .vision {
-	margin-left: 5%;
+    margin-left: 5%;
+    width: 25%;
   }
   .button {
 	border: 2px solid gray;
@@ -147,9 +167,8 @@ h1 {
     padding: 10px 45px 10px 45px;
 	text-decoration: none;
     font-size: 14px;
-    position: absolute;
-    top: 70%;
-    left: 24%;
+    text-align: center;
+
   }
   
   .middle-img {
@@ -169,12 +188,97 @@ h1 {
 		margin-bottom: 2%;
 		margin-top: 2%;
 	}
+
+
+@media screen and (max-width:1024px) {
+
+ .header-img {
+    display: none;
+    }
+    .banner {
+    text-align: center;
+    padding: 5%;
+    }
+
+    .wrapper {
+    display: flex;
+    flex-flow: wrap-reverse;
+    justify-content: center;
+    }
+    .banner {
+        display:flex;
+        margin-left: -5%;
+        text-align: center;
+    }
+    .button {
+        padding: 5px 50px 5px 50px;
+    
+      }
+    .middle-img {
+       margin-left: 0%;
+    }
+
+    .button {
+        display:flex;
+       align-self: center;
+        text-align: center;
+        padding: 1%;
+
+    }
+    
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:500px) {
+.navigation {
+    display: flex; 
+    flex-flow: column;
+    align-content: center;
+    
+}
+.button {
+    padding: 5px 50px 5px 50px;
 
+  }
+.banner {
+margin-top: 70%;
+}
+.navigation a {
+    border-top:2px solid lightgray;
+    border-bottom:2px solid lightgray;
+    text-align: center;
+}
+.header-img {
+    display: none;
+}
+.middle-img {
+    width: 100%;
 }
 
-@media screen and (max-width:400px) {
-
+.services {
+    margin-left: 5%;
+    width: 100%;
+  }
+  .features {
+      margin-left:5%;
+      width: 100%;
+  }
+  .about {
+    margin-left: 5%;
+    width: 100%;
+  }
+  .services {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .products {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .vision {
+    margin-left: 0%;
+    width: 100%;
+  }
+  p {
+      padding: 2%;
+  }
 }
