@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Code below */
+
+nav {
+    width: 100%;
+}
+.navigation {
+	list-style: none;
+    height: 50px;
+    width: 100%;
+
+}
+.navigation .link {	
+	text-decoration: none;
+    padding-left: 8%;
+	color: gray;
+	
+
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	line-height: 50px;
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 5%;	
+}
+.logo {
+width: 200px;
+height: 45px;	
+}
+.services-header-img {
+ margin-left:5% ;
+    width: 90%;
+}
+.services {
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 5%;
+    border-bottom: 2px solid black;
+    padding-bottom: 5%;
+}
+.section1, .section2, .section3, .section4, .section5, .section6 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 40%;
+    padding: 5%;
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+p {
+    padding-bottom: 5%;
+}
+
+.mainsection{
+   display: flex;
+   flex-wrap: wrap; 
+   width: 90%;
+   padding: 5%;
+}
+
+.learn{
+text-decoration: none;
+border: 2px solid black;
+padding: 5% 10% 5% 10%;
+line-height: 5%;
+font-size: 12px;
+color: black;
+background-color: white;
+border-radius: 6px;
+}
+
+.aboutservices {
+    border-top: 2px solid black ;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
+    width: 80%;
+}
+.services1 {
+    width: 50%;
+}
+ul {
+    display: flex;
+    flex-flow: column;
+    list-style: circle; 
+    line-height: 200%;
+   
+}
+    
+
+.services-info-img{
+  margin-top: -5%;
+}
+.services1 {
+    display: flex;
+    flex-flow: column wrap;
+}
+footer {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 20%;
+}
+
+
+@media screen and (max-width: 1024px) {
+   ul {
+       padding-bottom: 10%;
+   }
+    .services1 {
+       width: 100%;
+   }
+@media screen and (max-width: 800px) {
+    
+    .wrapper {
+        display: flex;
+        flex-flow: wrap-reverse;
+        justify-content: center;
+        
+        }
+        
+        .services1 {
+           width: 100%;
+           padding: 10%;
+        }
+        .section1, .section2, .section3, .section4, .section5, .section6 {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 10%;
+            margin-top: 5%;
+            width: 100%;
+            padding: 5%;
+            
+        }  
+    @media screen and (max-width:500px) {
+        nav {
+            border-bottom: 2px solid lightgray;
+            border-top: 2px solid lightgray;  
+        }
+        
+        .navigation {
+            display:flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        
+        .services-header-img {
+            margin-top:60%;
+            width: 100%;
+        }
+        .services1 {
+            width: 100%;
+        }
+       .aboutservices{
+          width: 100%;
+          margin: 3%;
+       }
+    }
+}
